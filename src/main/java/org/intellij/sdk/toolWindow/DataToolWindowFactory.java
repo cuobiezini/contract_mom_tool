@@ -136,14 +136,10 @@ final class DataToolWindowFactory implements ToolWindowFactory, DumbAware {
     private void fetchData() {
       // Clear existing data
       tableModel.setRowCount(0);
-
       // Add mock data
-      Object[] row1 = {"商旅结算账单报表服务(100037402)", "SOA(24442)", "商旅", "CorpSettlementBillService", "核心", "cxwang", "详情"};
-      Object[] row2 = {"酒店订单服务(100037403)", "Microservice(24443)", "酒店", "HotelOrderService", "重要", "zhangsan", "详情"};
-      Object[] row3 = {"机票查询服务(100037404)", "SOA(24444)", "机票", "FlightQueryService", "一般", "lisi", "详情"};
+      Object[] row3 = {"test", "SOA(24444)", "test", "test", "一般", "lisi", "详情"};
 
-      tableModel.addRow(row1);
-      tableModel.addRow(row2);
+
       tableModel.addRow(row3);
     }
 
