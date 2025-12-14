@@ -1,0 +1,37 @@
+<!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+
+<idea-plugin>
+
+  <!-- Unique id for this plugin. Must stay constant for the life of the plugin. -->
+  <id>org.intellij.sdk.contract_mom_tool</id>
+
+  <!-- Text to display as name on Settings | Plugin page -->
+  <name>Contract MOM Tool</name>
+
+  <!-- Indicate this plugin can be loaded in all IntelliJ Platform-based products. -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <!-- Text to display as description on Settings | Plugin page -->
+  <description>
+    <![CDATA[
+      A tool to assist with contract management and MOM processes.
+    ]]>
+  </description>
+  <change-notes>
+    <![CDATA[
+      <ul>
+        <li><b>1.0.0</b> Initial version of the Contract MOM Tool.</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- Text to display as company information on Settings | Plugin page -->
+  <vendor url="https://plugins.jetbrains.com">IntelliJ Platform SDK</vendor>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Contract MOM" secondary="true" icon="/icons/dataToolWindowIcon.svg" anchor="right"
+                factoryClass="org.intellij.sdk.toolWindow.DataToolWindowFactory"/>
+  </extensions>
+
+</idea-plugin>
